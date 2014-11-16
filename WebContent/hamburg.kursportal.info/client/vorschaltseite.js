@@ -5,14 +5,16 @@
   var wechseln_txt1 = "Sie werden jetzt nach >>";
   var wechseln_txt2 = "<< weitergeleitet! Da dies zuletzt Ihr bevorzugtes Portal war.";
 
-  var prefcookie_gueltigkeit = 30; // Tage
+  var prefcookie_gueltigkeit = 365; // Tage
 
-  var dist_portal_url = "http://hamburg.kursportal.info/";
-  var callback_url = "http://hamburg.kursportal.info/files/hh/vorschaltseite/xs_callback_json.php";
+  var dist_portal_url = "http://hamburg-aktiv.info/";
+  var callback_url = "http://hamburg-aktiv.info/files/hh/hamburgaktiv/vorschaltseite/xs_callback_json.php";  
 
   var preload_done = false;
 
-/* Entscheidungsfenster anfangs ausgeblendet.
+  var bgimage = '#super_wrapper #left .header H1, #super_wrapper #right .header H1, #super_wrapper #left > DIV, #super_wrapper #right > DIV, #super_wrapper #link-left, #super_wrapper #link-right, #super_wrapper #link-left:focus, #super_wrapper #logo_links, #super_wrapper #logo_rechts';
+
+   /* Entscheidungsfenster anfangs ausgeblendet.
       1. Nun, nach Laden der Seite: Links setzen, Entscheidungsfenster einblenden, wenn lokales Portal noch nicht Favorit, sonst entfernen, Cookie erneuern.
       2. Während Entscheidungsfenster angezeigt, im Hintergrund anderes Portal nach Cookie Fragen. Non-Blocking mit Timeout.
       3. Sobald Maus ueber Beschreibung des anderen Portals geht: im Hintergrund iframe mit anderem Portal vorladen, aber nicht einblenden. Non-Blocking.
@@ -22,7 +24,8 @@
 
         // 1.
         if(init_vorschaltseite()) {
-
+        jQuery(bgimage).css('background-image', "url('/files/hh/vorschaltseite/csg-541f1d05e8acd.png')");
+        
           // 2.
           fernes_portal_jetzt_abfragen();
       
@@ -47,15 +50,15 @@
     if(!vorschaltseite_an) {
       return false;
     }
-
+    
     if(window.location.hash == "#skip_preload") {
       return false; // gilt auch fuer Fernabfrage
     }
-
+    
     propagate_dist_url(dist_portal_url+"#favorit");
 
     if(window.location.hash == "#favorit" || jQuery.cookie("pref_portal") == document.domain) {
-
+    
       jQuery('#super_wrapper').remove();
       pref_set_cookie();
       
@@ -63,12 +66,11 @@
       // brauche ich das ferne Portal nicht mehr fragen (im Idealfall) und es auch nicht vorladen.
 
       return false; 
-
+    // 
     } else if( is_homepage() && (document.referrer == "" || !document.referrer.match(document.domain)) ) {
-
+      
       // Vorschaltseite nur auf der 1. Startseite anzeigen, aber nicht wenn man bereits von einer Unterseite des selben Portals kommt.
       vorschaltseite_display();
-
       return true;
     }
 
@@ -262,7 +264,7 @@
   }
     
   function is_homepage() {
-    return (jQuery("body.wisyp_homepage").length > 0 && jQuery("body.ohnebezirksauswahl").length == 0);
+    return (jQuery("body.wisyp_homepage").length > 0);
   }
   
   function log_error(text) {
