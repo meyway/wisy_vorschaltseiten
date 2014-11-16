@@ -12,8 +12,6 @@
 
   var preload_done = false;
 
-  var bgimage = '#super_wrapper #left .header H1, #super_wrapper #right .header H1, #super_wrapper #left > DIV, #super_wrapper #right > DIV, #super_wrapper #link-left, #super_wrapper #link-right, #super_wrapper #link-left:focus, #super_wrapper #logo_links, #super_wrapper #logo_rechts';
-
    /* Entscheidungsfenster anfangs ausgeblendet.
       1. Nun, nach Laden der Seite: Links setzen, Entscheidungsfenster einblenden, wenn lokales Portal noch nicht Favorit, sonst entfernen, Cookie erneuern.
       2. Während Entscheidungsfenster angezeigt, im Hintergrund anderes Portal nach Cookie Fragen. Non-Blocking mit Timeout.
@@ -24,7 +22,6 @@
 
         // 1.
         if(init_vorschaltseite()) {
-        jQuery(bgimage).css('background-image', "url('/files/hh/vorschaltseite/csg-541f1d05e8acd.png')");
         
           // 2.
           fernes_portal_jetzt_abfragen();
