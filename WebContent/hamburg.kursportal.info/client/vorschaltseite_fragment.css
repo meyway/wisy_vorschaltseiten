@@ -134,13 +134,13 @@ body {
 }
 
 #super_wrapper #left .header H1 {
-  background: url(data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==) #4db7e0;
+  background: url(/files/hh/vorschaltseite/csg-541f1d05e8acd.png) #4db7e0;
   background-position: 0 -1417px;
   background-repeat: repeat-x;
 }
 
 #super_wrapper #right .header H1 {
-  background: url(data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==) repeat-x scroll left top #2a5e85;
+  background: url(/files/hh/vorschaltseite/csg-541f1d05e8acd.png) repeat-x scroll left top #2a5e85;
   background-position: 0 -1498px;
 }
 
@@ -149,30 +149,30 @@ body {
 }
 
 #super_wrapper #left > DIV {
-  background: url(data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==) repeat-x scroll left top #d9ebf9;
+  background: url(/files/hh/vorschaltseite/csg-541f1d05e8acd.png) repeat-x scroll left top #d9ebf9;
   background-position: 0 -120px; 
 }
 
 #super_wrapper #right > DIV {
-  background: url(data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==) repeat-x scroll left top #ebebeb;
+  background: url(/files/hh/vorschaltseite/csg-541f1d05e8acd.png) repeat-x scroll left top #ebebeb;
   background-position: 0 -538px;
 }
 
 #super_wrapper #link-left, #super_wrapper #link-right {
-  background: url(data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==) no-repeat scroll left center transparent;
+  background: url(/files/hh/vorschaltseite/csg-541f1d05e8acd.png) no-repeat scroll left center transparent;
   background-position: 0 -78px;
   padding-left: 20px;
      font-weight: bold;
 }
 
 #super_wrapper #link-left:focus, #super_wrapper #link-left:hover {
-  background: url(data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==);
+  background: url(/files/hh/vorschaltseite/csg-541f1d05e8acd.png);
   background-position: 0 2px;
   text-decoration: none;
 }
 
 #super_wrapper #link-right:focus, #super_wrapper #link-right:hover {
-  background: url(data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==);
+  background: url(/files/hh/vorschaltseite/csg-541f1d05e8acd.png);
   background-position: 0 -38px;
   text-decoration: none;
 }
@@ -204,14 +204,14 @@ body {
 }
 
 #super_wrapper #logo_links {
-  background: url(data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==);
+  background: url(/files/hh/vorschaltseite/csg-541f1d05e8acd.png);
   background-position: 0 -956px;
   width: 446px; 
   height: 200px;
 }
 
 #super_wrapper #logo_rechts {
-  background: url(data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==);
+  background: url(/files/hh/vorschaltseite/csg-541f1d05e8acd.png);
   background-position: 0 -1185px; 
   width: 446px; 
   height: 200px;

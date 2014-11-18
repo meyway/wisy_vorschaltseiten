@@ -12,7 +12,7 @@
 
   var preload_done = false;
 
-/* Entscheidungsfenster anfangs ausgeblendet.
+  /* Entscheidungsfenster anfangs ausgeblendet.
       1. Nun, nach Laden der Seite: Links setzen, Entscheidungsfenster einblenden, wenn lokales Portal noch nicht Favorit, sonst entfernen, Cookie erneuern.
       2. Während Entscheidungsfenster angezeigt, im Hintergrund anderes Portal nach Cookie Fragen. Non-Blocking mit Timeout.
       3. Sobald Maus ueber Beschreibung des anderen Portals geht: im Hintergrund iframe mit anderem Portal vorladen, aber nicht einblenden. Non-Blocking.
