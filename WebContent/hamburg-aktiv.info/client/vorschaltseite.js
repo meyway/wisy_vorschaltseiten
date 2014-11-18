@@ -7,8 +7,8 @@
 
   var prefcookie_gueltigkeit = 30; // Tage
 
-  var dist_portal_url = "http://sandbox.hamburg.kursportal.info/";
-  var callback_url = "http://sandbox.hamburg.kursportal.info/files/hh/vorschaltseite/xs_callback_json.php";  
+  var dist_portal_url = "http://hamburg.kursportal.info/";
+  var callback_url = "http://hamburg.kursportal.info/files/hh/vorschaltseite/xs_callback_json.php";  
 
   var preload_done = false;
 
