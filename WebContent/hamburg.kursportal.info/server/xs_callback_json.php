@@ -29,14 +29,15 @@
         if($allowed) {
             header('Access-Control-Allow-Origin: '.$_SERVER['HTTP_ORIGIN']);
         }
-            header('Access-Control-Allow-Credentials: true');
+        
+        header('Access-Control-Allow-Credentials: true');
         
         // IE Einschraenkungen: http://msdn.microsoft.com/en-us/library/ie/hh673569%28v=vs.85%29.aspx
         // http://techblog.constantcontact.com/software-development/using-cors-for-cross-domain-ajax-requests/
-            header('Access-Control-Allow-Headers: X-Requested-With');
+        header('Access-Control-Allow-Headers: X-Requested-With');
             
         // http://msdn.microsoft.com/en-us/library/ms537343%28v=vs.85%29.aspx
-            header('P3P: CP="'.$_SERVER['SERVER_NAME'].' does not have a P3P policy."');
+        header('P3P: CP="'.$_SERVER['SERVER_NAME'].' does not have a P3P policy."');
            
         if($format == "JSONP") {
             header('Content-Type: application/javascript');

@@ -149,14 +149,7 @@
       xhr.setRequestHeader("Accept", "plain/text");
     
     } else if (typeof XDomainRequest != "undefined") {
-        // eingentlich hier sinnlos, weil ohne Credentials keine Cookie -> keine Praefportal-Ermittlung.
-              
-        // IF XDomainRequest.
-        // XDomainRequest only exists in IE, and is IE's way of making CORS requests.
-        // xhr = new XDomainRequest();
-        // xhr.setRequestHeader("Content-Type", "plain/text");
-        // xhr.open(method, url);
-    
+        // eingentlich hier sinnlos, weil ohne Credentials keine Cookie -> keine Praefportal-Ermittlung.    
     } else {
     
     // CORS nicht unterstuetzt
